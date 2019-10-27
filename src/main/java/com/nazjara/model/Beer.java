@@ -40,6 +40,6 @@ public class Beer {
     private String beerName;
     private String beerStyle;
     private BigDecimal price;
-    private Integer minOnHand;
     private Integer quantityOnHand;
+    private Integer quantityToBrew;
 }
