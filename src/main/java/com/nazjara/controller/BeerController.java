@@ -1,6 +1,9 @@
 package com.nazjara.controller;
 
 import com.nazjara.dto.BeerDto;
+import com.nazjara.service.BeerService;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -8,25 +11,25 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.UUID;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/beer")
 public class BeerController {
 
+    private final BeerService beerService;
+
     @GetMapping("/{id}")
     public ResponseEntity<BeerDto> get(@PathVariable UUID id) {
-        //todo impl
-        return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
+        return new ResponseEntity<>(beerService.getById(id), HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity save(@RequestBody @Valid BeerDto beer) {
-        //todo impl
-        return new ResponseEntity(HttpStatus.CREATED);
+        return new ResponseEntity<>(beerService.save(beer), HttpStatus.CREATED);
     }
 
     @PutMapping
     public ResponseEntity update(@RequestBody @Valid BeerDto beer, @PathVariable UUID id) {
-        //todo impl
-        return new ResponseEntity(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(beerService.update(id, beer), HttpStatus.OK);
     }
 }
