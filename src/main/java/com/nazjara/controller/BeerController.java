@@ -2,7 +2,6 @@ package com.nazjara.controller;
 
 import com.nazjara.dto.BeerDto;
 import com.nazjara.service.BeerService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
