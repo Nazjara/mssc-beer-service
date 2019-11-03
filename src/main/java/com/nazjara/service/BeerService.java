@@ -9,6 +9,7 @@ import java.util.UUID;
 
 public interface BeerService {
     BeerDto getById(UUID id, Boolean showInventoryOnHand);
+    BeerDto getByUpc(String upc, Boolean showInventoryOnHand);
     BeerDto save(BeerDto beer);
     BeerDto update(UUID id, BeerDto beer);
 
