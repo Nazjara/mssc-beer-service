@@ -40,7 +40,7 @@ public class BeerController {
         }
 
         if (showInventoryOnHand == null) {
-            showInventoryOnHand = false;
+            showInventoryOnHand = DEFAULT_SHOW_INVENTORY_ON_HAND;
         }
 
         BeerPagedList beerList = beerService.listBeers(beerName, beerStyle, PageRequest.of(pageNumber, pageSize), showInventoryOnHand);
@@ -49,8 +49,8 @@ public class BeerController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<BeerDto> get(@PathVariable UUID id) {
-        return new ResponseEntity<>(beerService.getById(id), HttpStatus.OK);
+    public ResponseEntity<BeerDto> get(@PathVariable UUID id, @RequestParam(value = "showInventoryOnHand", required = false) Boolean showInventoryOnHand) {
+        return new ResponseEntity<>(beerService.getById(id, showInventoryOnHand), HttpStatus.OK);
     }
 
     @PostMapping
