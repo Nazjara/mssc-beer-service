@@ -12,5 +12,5 @@ public interface BeerService {
     BeerDto save(BeerDto beer);
     BeerDto update(UUID id, BeerDto beer);
 
-    BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest);
+    BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest, Boolean showInventoryOnHand);
 }
