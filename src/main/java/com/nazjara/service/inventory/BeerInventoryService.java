@@ -1,4 +1,4 @@
-package com.nazjara.service;
+package com.nazjara.service.inventory;
 
 import java.util.UUID;
 

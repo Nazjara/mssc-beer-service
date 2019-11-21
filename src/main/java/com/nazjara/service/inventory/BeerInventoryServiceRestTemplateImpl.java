@@ -1,4 +1,4 @@
-package com.nazjara.service;
+package com.nazjara.service.inventory;
 
 import com.nazjara.dto.BeerInventoryDto;
 import lombok.extern.slf4j.Slf4j;

@@ -1,10 +1,11 @@
-package com.nazjara.service;
+package com.nazjara.service.brewing;
 
 import com.nazjara.config.JmsConfig;
 import com.nazjara.event.BrewBeerEvent;
 import com.nazjara.mapper.BeerMapper;
 import com.nazjara.model.Beer;
 import com.nazjara.repository.BeerRepository;
+import com.nazjara.service.inventory.BeerInventoryService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.core.JmsTemplate;
