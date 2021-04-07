@@ -1,9 +1,9 @@
 package com.nazjara.service.brewing;
 
 import com.nazjara.config.JmsConfig;
-import com.nazjara.dto.BeerDto;
-import com.nazjara.event.BrewBeerEvent;
-import com.nazjara.event.NewInventoryEvent;
+import com.nazjara.model.BeerDto;
+import com.nazjara.model.event.BrewBeerEvent;
+import com.nazjara.model.event.NewInventoryEvent;
 import com.nazjara.model.Beer;
 import com.nazjara.repository.BeerRepository;
 import lombok.RequiredArgsConstructor;

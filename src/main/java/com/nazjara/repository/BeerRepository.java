@@ -1,6 +1,6 @@
 package com.nazjara.repository;
 
-import com.nazjara.dto.BeerStyleEnum;
+import com.nazjara.model.BeerStyleEnum;
 import com.nazjara.model.Beer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

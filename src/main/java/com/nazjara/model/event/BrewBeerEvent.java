@@ -1,6 +1,6 @@
-package com.nazjara.event;
+package com.nazjara.model.event;
 
-import com.nazjara.dto.BeerDto;
+import com.nazjara.model.BeerDto;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor

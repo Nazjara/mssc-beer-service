@@ -1,6 +1,6 @@
 package com.nazjara.bootstrap;
 
-import com.nazjara.dto.BeerStyleEnum;
+import com.nazjara.model.BeerStyleEnum;
 import com.nazjara.model.Beer;
 import com.nazjara.repository.BeerRepository;
 import lombok.RequiredArgsConstructor;

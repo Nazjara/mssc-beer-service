@@ -1,4 +1,4 @@
-package com.nazjara.dto;
+package com.nazjara.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package com.nazjara.dto;
+package com.nazjara.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

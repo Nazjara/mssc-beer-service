@@ -1,6 +1,6 @@
 package com.nazjara.mapper;
 
-import com.nazjara.dto.BeerDto;
+import com.nazjara.model.BeerDto;
 import com.nazjara.model.Beer;
 import com.nazjara.service.inventory.BeerInventoryService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,8 @@
 package com.nazjara.controller;
 
-import com.nazjara.dto.BeerDto;
-import com.nazjara.dto.BeerPagedList;
-import com.nazjara.dto.BeerStyleEnum;
+import com.nazjara.model.BeerDto;
+import com.nazjara.model.BeerPagedList;
+import com.nazjara.model.BeerStyleEnum;
 import com.nazjara.service.BeerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
